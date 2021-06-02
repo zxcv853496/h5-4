@@ -1,0 +1,98 @@
+.eightpage{
+    position: relative;
+    height: 100%;
+    .container{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: calc(100% - 44px);
+        height: calc(100% - 210px);
+        padding: 50px 22px;
+        padding-top: 160px;
+        color: #F1D77F;
+        @media (min-width:375px) {
+            height: calc(100% - 240px);
+            padding-top: 190px;
+            padding-bottom: 50px;
+        }
+        @media (min-width:375px) and (min-height:812px) {
+            height: calc(100% - 290px);
+            padding-top: 220px;
+            padding-bottom: 70px;
+        }
+        @media (min-width:768px) {
+            width: calc(100% - 90px);
+            height: calc(100% - 390px);
+            padding: 0 45px;
+            padding-top: 290px;
+            padding-bottom: 100px;
+        }
+        @media (min-width:1200px) {
+            height: calc(100% - 350px);
+            padding-top: 250px;
+            padding-bottom: 100px;
+        }
+        >.sub-container{
+            padding: 10px 20px;
+            height: calc(100% - 20px);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            font-weight: 300;
+            @media (min-width:1200px) {
+                justify-content: space-between;
+            }
+            .map-container{
+                border: 2px solid #F1D77F;
+                display: flex;
+                flex-direction: column;
+                height: 70%;
+                @media (min-width:1200px) {
+                    height: 80%;
+                }
+                iframe{
+                    width: 100%;
+                    flex-grow: 1;
+                }
+                .a-container{
+                    position: relative;
+                    background-color: #F1D77F;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 40px;
+                    @media (min-width:768px) {
+                        height: 50px;
+                    }
+                    a:nth-child(1){
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        opacity: 0;
+                    }
+                    a:nth-child(2){
+                        text-decoration: none;
+                        color: black;
+                        font-weight: 500;
+                        font-size: 4vmin;
+                        @media (min-width:768px) {
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+            .connection{
+                .content{
+                    font-size: 4vmin;
+                    text-align: center;
+                    margin: 5px 0;
+                    @media (min-width:768px) {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

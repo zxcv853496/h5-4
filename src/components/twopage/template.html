@@ -1,0 +1,45 @@
+<div class="twopage">
+    <Backgroundpage :active="active" :title="title"/>
+    <div class="container">
+        <div class="sub-container">
+            <span v-for="item in content" 
+            :key="item.index"
+            :class="{'animate__animated animate__zoomIn animate__delay-05s':active}">
+                {{ item }}
+            </span>
+            <span :class="{'animate__animated animate__zoomIn animate__delay-05s':active}">
+                <span>
+                    與兩岸接軌攜手邁進。
+                </span>
+                <span>
+                    拓展多元化銷售通路
+                </span>
+            </span>
+            <div class="x-container">
+                <div class="content">
+                    <span 
+                    :class="{'animate__animated animate__fadeIn animate__delay-05s':active}">
+                        專業
+                    </span>
+                    <span
+                    :class="{'animate__animated animate__fadeIn animate__delay-05s':active}">
+                        國際化
+                    </span>
+                    <span
+                    :class="{'animate__animated animate__fadeIn animate__delay-05s':active}">
+                        行動力
+                    </span>
+                    <span
+                    :class="{'animate__animated animate__fadeIn animate__delay-05s':active}">
+                        用心
+                    </span>
+                    <div class="line-1"
+                    :class="{'animate__animated animate__rotateIn-left animate__delay-05s':active}"></div>
+                    <div class="line-2"
+                    :class="{'animate__animated animate__rotateIn-right animate__delay-05s':active}"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

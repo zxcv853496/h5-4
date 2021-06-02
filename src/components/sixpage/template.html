@@ -1,0 +1,30 @@
+<div class="sixpage">
+    <Backgroundpage :active="active" :title="title"/>
+    <div class="container">
+        <div class="sub-container">
+            <div class="img-content"
+            :class="{'animate__animated animate__rollIn animate__delay-05s':active}">
+                <div class="img-sub-content">
+                    <div class="img-container"
+                    :class="{'animate__animated animate__rollIn animate__delay-05s animate__slow':active}">
+                        <img :src="data[1].img" alt="">
+                    </div>
+                    <div class="img-container"
+                    :class="{'animate__animated animate__rollIn animate__delay-05s animate__slow':active}">
+                        <img :src="data[2].img" alt="">
+                    </div>
+                </div>
+                <div class="img-container"
+                :class="{'animate__animated animate__rollIn animate__delay-05s animate__slow':active}">
+                    <img :src="data[0].img" alt="">
+                </div>
+            </div>
+            <div class="content" v-for="item in content" :key="item.index"
+            :class="{'animate__animated animate__fadeInUp animate__delay-05s':active}">
+                <span>
+                    {{ item }}
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

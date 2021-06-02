@@ -1,0 +1,79 @@
+.sevenpage{
+    position: relative;
+    height: 100%;
+    .container{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: calc(100% - 44px);
+        height: calc(100% - 210px);
+        padding: 50px 22px;
+        padding-top: 160px;
+        color: #F1D77F;
+        @media (min-width:375px) {
+            height: calc(100% - 240px);
+            padding-top: 190px;
+            padding-bottom: 50px;
+        }
+        @media (min-width:375px) and (min-height:812px) {
+            height: calc(100% - 290px);
+            padding-top: 220px;
+            padding-bottom: 70px;
+        }
+        @media (min-width:768px) {
+            width: calc(100% - 90px);
+            height: calc(100% - 390px);
+            padding: 0 45px;
+            padding-top: 290px;
+            padding-bottom: 100px;
+        }
+        @media (min-width:1200px) {
+            height: calc(100% - 350px);
+            padding-top: 250px;
+            padding-bottom: 100px;
+        }
+        >.sub-container{
+            padding: 10px 20px;
+            height: calc(100% - 20px);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            font-weight: 300;
+            align-items: center;
+            .content{
+                width: 47%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+                span{
+                    margin-top: 5px;
+                    @media (min-width:768px) {
+                        font-size: 20px;
+                        font-weight: 500;
+                        margin-top: 10px;
+                    }
+                }
+                .img-container{
+                    position: relative;
+                    width: 50px;
+                    height: 50px;
+                    margin: 0 auto;
+                    @media (min-width:768px) {
+                        width: 100px;
+                        height: 100px;
+                    }
+                    img{
+                        border: 1px solid #F1D77F;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+<div class="eightpage">
+    <Backgroundpage :active="active" :title="title"/>
+    <div class="container">
+        <div class="sub-container">
+            <div class="map-container"
+            :class="{'animate__animated animate__zoomIn animate__delay-05s animate__slow':active}">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.8139969516187!2d120.65268201536752!3d24.143169479574237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693df0ad32ee69%3A0xb27ba42ba48fc4a3!2z5rOz5qyj5bmz6Z2i6Kit6KiIIOe2sui3r-ihjOmKtw!5e0!3m2!1szh-TW!2stw!4v1622597606140!5m2!1szh-TW!2stw" 
+                style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div class="a-container">
+                    <a href="https://g.page/yongxin888?share">立即前往</a>
+                    <a href="https://g.page/yongxin888?share">立即前往</a>
+                </div>
+            </div>
+
+            <div class="connection">
+                <div class="content"
+                :class="{'animate__animated animate__zoomIn animate__delay-05s':active}"
+                v-for="item in connection" :key="item.index">
+                    {{ item }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

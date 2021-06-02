@@ -1,0 +1,28 @@
+<div class="fivepage">
+    <Backgroundpage :active="active" :title="title"/>
+    <div class="container">
+        <div class="sub-container">
+            <div class="img-content">
+                <div class="img-container" 
+                v-for="(item , item_index) in data"
+                :key="item.index">
+                    <img :src="item.img" alt=""
+                    :class="DelayFormat(item_index)">
+                </div>
+            </div>
+            <div class="content"
+            :class="{'animate__animated animate__fadeIn animate__delay-05s':active}">
+                <div>
+                    <span>
+                        直播中宣傳商品
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        增加商品曝光率
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
