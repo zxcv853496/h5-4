@@ -40,6 +40,13 @@
         opacity: 0.4;
         animation-play-state: paused;
     }
+    i:nth-child(2){
+        opacity: 0;
+        transition: .3s;
+        &.pause{
+            opacity: 1;
+        }
+    }
 }
 
 @keyframes btnMusicAni {

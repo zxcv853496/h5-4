@@ -47,6 +47,9 @@
                 display: flex;
                 justify-content: center;
                 flex-wrap: wrap;
+                @media (min-width:375px) {
+                    height: 80%;
+                }
                 .img-container{
                     position: relative;
                     height: 98%;

@@ -62,13 +62,14 @@
                 transform: translate(-50%,-34%);
                 width: 25%;
                 height: 25%;
-                img{
-                    position: absolute;
-                    width: 100%;
+                .logo{
+                    font-size: 7vmin;
                     height: 100%;
-                    object-fit: contain;
-                    top: 0;
-                    left: 0;
+                    color: #F1D77F;
+                    font-weight: 900;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                 }
             }
             .container-parallel{

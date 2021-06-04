@@ -1,20 +1,14 @@
-<div class="twopage">
+<div class="twopage-2">
     <Backgroundpage :active="active" :title="title"/>
     <div class="container">
         <div class="sub-container">
-            <span v-for="item in content" 
-            :key="item.index"
-            :class="{'animate__animated animate__zoomIn animate__delay-05s':active}">
-                {{ item }}
-            </span>
-            <span :class="{'animate__animated animate__zoomIn animate__delay-05s':active}">
-                <span>
-                    大家一起手牽手
+            <div class="span-container">
+                <span v-for="item in content" 
+                :key="item.index"
+                :class="{'animate__animated animate__zoomIn animate__delay-05s':active}">
+                    {{ item }}
                 </span>
-                <span>
-                    遊入深海大鳳梨做朋友
-                </span>
-            </span>
+            </div>
             <div class="x-container">
                 <div class="content">
                     <span 

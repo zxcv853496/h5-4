@@ -1,21 +1,24 @@
 <template>
   <div id="app">
-    <div class="topcover" :class="{'active': !active}">
-      <div>
-        <img class="back" src="/img/mainpage/main-back.webp" alt="">
-        <img class="back" src="/img/mainpage/back-animation.webp" alt="">
-        <img class="back" src="/img/mainpage/back-yellow.webp" alt="">
-      </div>
-    </div>
     <div class="basic-cover"
     :class="{'touch':touch}">
-      <div class="label">{{ label }}</div>
+      <div class="label">
+        {{ label }}
+      </div>
+      <img class="cover" src="/H5/4/img/topcover/topcover-img.jpg" alt="">
       <div class="finger-container">
-        <img class="finger" src="/img/topcover/finger.png" alt=""
+        <img class="finger" src="/H5/4/img/topcover/finger.png" alt=""
         @touchstart='touch = true'
         v-on:click="isMobile">
-        <img class="scan" src="/img/topcover/scan.png" alt=""
+        <img class="scan" src="/H5/4/img/topcover/scan.png" alt=""
         :class="{'touch':touch}">
+      </div>
+    </div>
+    <div class="topcover" :class="{'active': !active}">
+      <div>
+        <img class="back" src="/H5/4/img/mainpage/main-back.webp" alt="">
+        <img class="back" src="/H5/4/img/mainpage/back-animation.webp" alt="">
+        <img class="back" src="/H5/4/img/mainpage/back-yellow.webp" alt="">
       </div>
     </div>
     <audio id="audio" autoplay>
@@ -25,6 +28,8 @@
     :class="{'paused':btnPuased}"
     @click="audioAutoPlay">
       <i class="material-icons md-18">music_note</i>
+      <i class="material-icons md-18"
+      :class="{'pause':btnPuased}">music_off</i>
     </button>
     <div class="arrow-up">
       <i class="fas fa-angle-double-up"></i>
@@ -36,6 +41,9 @@
       <div class="section" >
         <Twopage :active="active"/>
       </div>     
+      <div class="section" >
+        <Twopage_2 :active="active"/>
+      </div>   
       <div class="section" >
         <Threepage :active="active"/>
       </div>         
@@ -62,6 +70,7 @@
 import './assets/css/app.scss'
 import Mainpage from './components/mainpage/index'
 import Twopage from './components/twopage/index'
+import Twopage_2 from './components/twopage-2/index'
 import Threepage from './components/threepage/index'
 import Fourpage from './components/fourpage/index'
 import Fivepage from './components/fivepage/index'
@@ -80,6 +89,7 @@ export default {
     Sixpage,
     Sevenpage,
     Eightpage,
+    Twopage_2,
   },
   data() {
     return{

@@ -6,13 +6,13 @@ import Backgroundpage from '../backgroundpage/index'
 export default {
     data(){
         return{
-            title: '頂尖宗旨',
+            title: 'FEINIEL',
             content:[
-                '致力於創新行銷領域',
-                '•互聯網電商平台',
-                '•創意廣告',
-                '•多媒體影像製作',
-                '•演藝娛樂藝人栽培課程',
+                '•生日： 12/07',
+                '•身高： 168',
+                '•體重： 47',
+                '•三圍：　34D 25 35',
+                '•髮色： 黑棕長髮',
             ]
         }
     },

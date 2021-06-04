@@ -82,6 +82,14 @@
                     font-size: 20px;
                     text-align: center;
                 }
+                a{
+                    color: rgb(255, 255, 255);
+                    text-decoration: none;
+                    transition: all .3s;
+                    &:hover{
+                        color: rgb(131, 131, 255);
+                    }
+                }
             }
         }
     }

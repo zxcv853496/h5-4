@@ -8,9 +8,8 @@ export default {
         return{
             title: '聯繫方式',
             connection:[
-                '電話: 04-2471-9799',
-                '公司地址： 台中市南屯區精誠路504號2F',
-                '信箱： yongxin@yongxin-design.com'
+                '電話: 0956352672',
+                '信箱： VOLVO914074@GMAIL.COM'
             ]
         }
     },

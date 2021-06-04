@@ -6,24 +6,25 @@ import Backgroundpage from '../backgroundpage/index'
 export default {
     data(){
         return{
-            title: '資歷',
+            title: '活動資歷',
             data:[
                 {
-                    img:'/img/sixpage/sixpage-img-1.jpg',
+                    img:'/H5/4/img/sixpage/sixpage-img-1.jpg',
                 },
                 {
-                    img:'/img/sixpage/sixpage-img-2.jpg',
+                    img:'/H5/4/img/sixpage/sixpage-img-2.jpg',
                 },
                 {
-                    img:'/img/sixpage/sixpage-img-3.jpg',
+                    img:'/H5/4/img/sixpage/sixpage-img-3.jpg',
                 },
             ],
             content:[
-                '2017   LOreal Color Trophy 髮型秀攝影造型',
-                '2017   實踐大學服裝設計系 畢業展 後台造型',
-                '2016    獵人工作室 演員形象造型',
-                '2016    1922 網路商城攝影造型 / 美編',
-                '2015    國際美容美髮競賽亞洲盃創意面具組 優選',
+                '2021   資生堂水玉光AI小白金 巨城全台首賣會主持',
+                '2021   DYSON展演主持2場',
+                '2021   VIVO X50活動主持',
+                '2021   電玩展奧瑞吉末日餘暉SG',
+                '2021   台南新光三越納智傑URX新車活動',
+                '2020   南台車展納智傑URX新車活動主持',
             ]
         }
     },

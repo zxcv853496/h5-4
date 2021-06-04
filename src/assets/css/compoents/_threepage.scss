@@ -59,8 +59,11 @@
                     width: 47%;
                     height: 150px;
                     position: relative;
-                    @media (min-width:768px) {
+                    @media (min-width:375px) {
                         height: 200px;
+                    }
+                    @media (min-width:768px) {
+                        height: 400px;
                     }
                     
                     img{

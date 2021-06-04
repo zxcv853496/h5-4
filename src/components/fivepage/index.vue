@@ -6,49 +6,49 @@ import Backgroundpage from '../backgroundpage/index'
 export default {
     data(){
         return{
-            title: '直播主',
+            title: '宣傳照',
             data:[
                 {
-                    img:'/img/fivepage/1.jpg'
+                    img:'/H5/4/img/fivepage/1.jpg'
                 },
                 {
-                    img:'/img/fivepage/2.jpg'
+                    img:'/H5/4/img/fivepage/2.jpg'
                 },
                 {
-                    img:'/img/fivepage/3.jpg'
+                    img:'/H5/4/img/fivepage/3.jpg'
                 },
                 {
-                    img:'/img/fivepage/4.jpg'
+                    img:'/H5/4/img/fivepage/4.jpg'
                 },
                 {
-                    img:'/img/fivepage/5.jpg'
+                    img:'/H5/4/img/fivepage/5.jpg'
                 },
                 {
-                    img:'/img/fivepage/6.jpg'
+                    img:'/H5/4/img/fivepage/6.jpg'
                 },
                 {
-                    img:'/img/fivepage/7.jpg'
+                    img:'/H5/4/img/fivepage/7.jpg'
                 },
                 {
-                    img:'/img/fivepage/8.jpg'
+                    img:'/H5/4/img/fivepage/8.jpg'
                 },
                 {
-                    img:'/img/fivepage/9.jpg'
+                    img:'/H5/4/img/fivepage/9.jpg'
                 },
                 {
-                    img:'/img/fivepage/10.jpg'
+                    img:'/H5/4/img/fivepage/10.jpg'
                 },
                 {
-                    img:'/img/fivepage/11.jpg'
+                    img:'/H5/4/img/fivepage/11.jpg'
                 },
                 {
-                    img:'/img/fivepage/12.jpg'
+                    img:'/H5/4/img/fivepage/12.jpg'
                 },
                 {
-                    img:'/img/fivepage/13.jpg'
+                    img:'/H5/4/img/fivepage/13.jpg'
                 },
                 {
-                    img:'/img/fivepage/14.jpg'
+                    img:'/H5/4/img/fivepage/14.jpg'
                 },
             ]
         }
